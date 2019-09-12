@@ -1,0 +1,205 @@
+/*For desktops and laptops*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html{
+      scroll-behavior: smooth;
+  }
+  body{
+      color: aliceblue;
+      background-image: url(https://i.pinimg.com/originals/0e/c5/2e/0ec52e38638f730a8acf6d3417ab9547.jpg);
+      background-size: 100% auto;
+  }
+
+/*main doc style*/
+  #main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+/*page-header style*/
+  #page-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2vh;
+    width: 100vw;
+    height: 10vh;
+    font-family: 'Alegreya', serif;
+    font-size: 2vh;
+    color: #0cc90c;
+}
+  #page-header p{
+    color: #ffb600;
+    margin: 2vh;
+    text-align: center;
+}
+/*form content style*/
+#content{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 80vh;
+    margin-top: 2vh;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 2vh;
+}
+.rowTab{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px;
+    margin-top: 5px;
+    width: 100vw;
+}
+.labels{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 35vw;
+    padding: 5px;
+    margin-top: 10px;
+}
+.rightTab {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 40vw;
+    margin: 2px;
+}
+.textField{
+    width: 30vw;
+    height: 4vh;
+    padding: 10px;
+    border: 1px solid #c0c0c0;
+    border-radius: 2px;
+    align-self: flex-end;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 2vh;
+}
+#dropdown{
+    width: 20vw;
+    height: 4vh;
+    padding: 2px;
+    border: 1px solid #c0c0c0;
+    border-radius: 2px;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 2vh;
+}
+.radio, .checkbox {
+    margin: 0 0 8px 10px;
+}
+#comments{
+    width: 30vw;
+    height: 25vh;
+    padding: 10px;
+    border: 1px solid #c0c0c0;
+    border-radius: 2px;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 2vh;
+}
+#submit{
+    padding: 10px 20px;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 2vh;
+}
+.button1{
+    font-family: 'Didact Gothic', sans-serif;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: 2px solid #4CAF50;
+    background-color: white; 
+    color: black;
+}
+.button1:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+/*For mobiles and tablets*/
+@media only screen and (max-width: 768px) {
+    #page-header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 4vh;
+        width: 100vw;
+        height: 10vh;
+        font-family: 'Alegreya', serif;
+        font-size: 2.4vmax;
+    }
+    #content{
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        height: 80vh;
+        margin-top: 2vh;
+        font-family: 'Didact Gothic', sans-serif;
+        font-size: 2.5vmax;
+    }
+    .rowTab{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        margin-top: 5px;
+        width: 100vw;
+    }
+    .labels{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 40vw;
+        padding: 5px;
+        margin-top: 10px;
+    }
+    .rightTab {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width: 40vw;
+        margin: 5px;
+    }
+    .textField{
+        width: 50vw;
+        height: 4vh;
+        padding: 10px;
+        border: 1px solid #c0c0c0;
+        border-radius: 2px;
+        align-self: flex-end;
+        font-family: 'Didact Gothic', sans-serif;
+        font-size: 2.4vmax;
+    }
+    #dropdown{
+        width: 50vw;
+        height: 4vh;
+        padding: 2px;
+        border: 1px solid #c0c0c0;
+        border-radius: 2px;
+        font-family: 'Didact Gothic', sans-serif;
+        font-size: 2.4vmax;
+    }
+    .radio, .checkbox {
+        margin: 8px;
+    }
+    #comments{
+        width: 50vw;
+        height: 25vh;
+        padding: 10px;
+        border: 1px solid #c0c0c0;
+        border-radius: 2px;
+        font-family: 'Didact Gothic', sans-serif;
+        font-size: 2.4vmax;
+    }
+}
